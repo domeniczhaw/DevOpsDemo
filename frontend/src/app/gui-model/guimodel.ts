@@ -126,6 +126,16 @@ export class GuiModel {
                             }
                         },
                         {
+                            "type": "newButton",
+                            "name": { default: "DevOps Domenic"},
+                            "icon": "fa-user",
+                            "color": "blue",
+                            "width": 2,
+                            "form" : {
+                                "form" : "ToDoForm"
+                            }
+                        },
+                        {
                             "type": "list",
                             "name": "ToDo",
                             "icon": "fa-user",
