@@ -1,15 +1,15 @@
 package ch.zhaw.iwi.devops.demo;
 
-public class ToDo {
+public class Person {
 
     private int id;
     private String title;
     private String description;
 
-    public ToDo() {
+    public Person() {
     }
     
-    public ToDo(int id, String title, String description) {
+    public Person(int id, String title, String description) {
         this.id = id;
         this.title = title;
         this.description = description;
