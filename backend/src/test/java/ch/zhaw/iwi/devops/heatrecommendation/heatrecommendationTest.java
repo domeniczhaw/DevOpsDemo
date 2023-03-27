@@ -12,5 +12,13 @@ public class heatrecommendationTest {
         Assertions.assertEquals("1", heatrecommender.recommendationheat1(1));
 
     }
+
+    @Test
+    public void heatrecommendation2() {
+
+        heatrecommendation heatrecommender = new heatrecommendation();
+        Assertions.assertEquals("Du solltest eine dicke Jacke anziehen", heatrecommender.recommendationheat1(5));
+
+    }
     
 }
