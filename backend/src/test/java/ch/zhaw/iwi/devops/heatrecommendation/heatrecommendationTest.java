@@ -20,5 +20,28 @@ public class heatrecommendationTest {
         Assertions.assertEquals("Du solltest eine dicke Jacke anziehen", heatrecommender.recommendationheat1(5));
 
     }
-    
+
+    @Test
+    public void heatrecommendation3() {
+
+        heatrecommendation heatrecommender = new heatrecommendation();
+        Assertions.assertEquals("Eine leichte Jacke sollte genügen", heatrecommender.recommendationheat1(15));
+
+    }
+
+    @Test
+    public void heatrecommendation4() {
+
+        heatrecommendation heatrecommender = new heatrecommendation();
+        Assertions.assertEquals("Du brauchst keine Jacke anzuziehen", heatrecommender.recommendationheat1(25));
+
+    }
+
+    @Test
+    public void heatrecommendation5() {
+
+        heatrecommendation heatrecommender = new heatrecommendation();
+        Assertions.assertEquals("Das funktioniert nicht", heatrecommender.recommendationheat1(35));
+    }
+
 }
