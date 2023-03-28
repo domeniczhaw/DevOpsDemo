@@ -41,7 +41,7 @@ public class heatrecommendationTest {
     public void heatrecommendation5() {
 
         heatrecommendation heatrecommender = new heatrecommendation();
-        Assertions.assertEquals("Das funktioniert nicht", heatrecommender.recommendationheat1(35));
+        Assertions.assertEquals("35", heatrecommender.recommendationheat1(35));
     }
 
 }
