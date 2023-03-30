@@ -58,5 +58,43 @@ public class heatrecommendationTest {
         Assertions.assertEquals("Du solltest kalt duschen!", heatrecommender.recommendationheat1(41));
     }
 
+    @Test
+    public void heatrecommendation8() {
+
+        heatrecommendation heatrecommender = new heatrecommendation();
+        Assertions.assertEquals("Du solltest eine dicke Jacke anziehen", heatrecommender.recommendationheat1(8));
+
+    }
+
+    @Test
+    public void heatrecommendation9() {
+
+        heatrecommendation heatrecommender = new heatrecommendation();
+        Assertions.assertEquals("Eine leichte Jacke sollte genügen", heatrecommender.recommendationheat1(18));
+
+    }
+
+    @Test
+    public void heatrecommendation10() {
+
+        heatrecommendation heatrecommender = new heatrecommendation();
+        Assertions.assertEquals("Du brauchst keine Jacke anzuziehen", heatrecommender.recommendationheat1(28));
+
+    }
+
+    @Test
+    public void heatrecommendation11() {
+
+        heatrecommendation heatrecommender = new heatrecommendation();
+        Assertions.assertEquals("Du solltest dringend etwas drinken!", heatrecommender.recommendationheat1(39));
+    }
+
+    @Test
+    public void heatrecommendation12() {
+
+        heatrecommendation heatrecommender = new heatrecommendation();
+        Assertions.assertEquals("Du solltest kalt duschen!", heatrecommender.recommendationheat1(45));
+    }
+
 
 }
