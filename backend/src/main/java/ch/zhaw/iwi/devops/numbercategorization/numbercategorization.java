@@ -1,9 +1,9 @@
-package ch.zhaw.iwi.devops.numberCategorization;
+package ch.zhaw.iwi.devops.numbercategorization;
  
 
-class numberCategorization {
+class NumberCategorization {
 
-    private numberCategorization() {
+    private NumberCategorization() {
         throw new IllegalStateException("Utility class");
     }
     
