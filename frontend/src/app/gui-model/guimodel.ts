@@ -30,13 +30,13 @@ export class GuiModel {
                             "width": 2
                         },
                         {
-                            "type": 'okButton',
-                            "name": 'Ok'
+                            "type": "okButton",
+                            "name": "Ok"
                         }
                     ]
-                }, sadad
+                },
                 {
-                    "id": 'NotImplementedFormModal',
+                    "id": "NotImplementedFormModal",
                     "title": "NotImplemented",
                     "url": "/dummyform",
                     "formFieldList": [
