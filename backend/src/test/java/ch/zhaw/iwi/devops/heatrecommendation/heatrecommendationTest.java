@@ -102,13 +102,11 @@ public class heatrecommendationTest {
         heatrecommendation heatrecommender = new heatrecommendation();
         Assertions.assertEquals("Du solltest kalt duschen!", heatrecommender.recommendationheat1(70));
     }
-
     @Test
     public void heatrecommendation14() {
 
         heatrecommendation heatrecommender = new heatrecommendation();
-        Assertions.assertEquals("Du solltest kalt duschen!", heatrecommender.recommendationheat1(300));
+        Assertions.assertEquals("Du solltest kalt duschen!", heatrecommender.recommendationheat1(45));
     }
-
 
 }

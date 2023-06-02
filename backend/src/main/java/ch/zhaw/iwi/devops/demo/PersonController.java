@@ -53,7 +53,7 @@ public class PersonController {
         var result = new ArrayList<PathListEntry<Integer>>();
         for (var personal : this.persons.values()) {
             var entry = new PathListEntry<Integer>();
-            entry.setKey(personal.getId(), "todoKey");
+            entry.setKey(personal.getId(), "Joel");
             entry.setName(personal.getTitle());
             entry.getDetails().add(personal.getDescription());
             entry.setTooltip(personal.getDescription());
@@ -67,7 +67,7 @@ public class PersonController {
         return this.persons.get(id);
     }
 
-    @PostMapping("/person")
+    @PostMapping("/person/{id}")
     public void createPerson(@RequestBody Person person) {
         var newId = this.persons.keySet().stream().max(Comparator.naturalOrder()).orElse(0) + 1;
         person.setId(newId);
@@ -75,9 +75,9 @@ public class PersonController {
     }
 
     @PutMapping("/person/{id}")
-    public void updatePerson(@PathVariable Integer key,@RequestBody Person person) {
-        person.setId(key);
-        this.persons.put(key, person);
+    public void updatePerson(@PathVariable Integer id,@RequestBody Person person) {
+        person.setId(id);
+        this.persons.put(id, person);
     }
 
     @DeleteMapping("/person/{id}")
