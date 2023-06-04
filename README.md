@@ -17,7 +17,7 @@ DevOps Prototype
 cd frontend
 npm install
 npm run dev
-```
+```--
 
 ## Deployment
 * Open a console/terminal window and change directory to backend:
